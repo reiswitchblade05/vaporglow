@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <script src="js/script.js"></script>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -71,17 +71,30 @@
         </div>
       </div>
     </nav>
+    <center>
+      <div class="jumbotron mt-5 mb-5 w-75">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+    </center>
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="card border-primary mb-3" style="max-width: 20rem">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h4 class="card-title">Primary card title</h4>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+          <div data-aos="fade-down">
+            <div class="card border-primary mb-3" style="max-width: 20rem">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h4 class="card-title">Primary card title</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -91,8 +104,8 @@
             <div class="card-body">
               <h4 class="card-title">Secondary card title</h4>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
             </div>
           </div>
@@ -103,8 +116,8 @@
             <div class="card-body">
               <h4 class="card-title">Success card title</h4>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
             </div>
           </div>
@@ -117,8 +130,8 @@
             <div class="card-body">
               <h4 class="card-title">Danger card title</h4>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
             </div>
           </div>
@@ -129,8 +142,8 @@
             <div class="card-body">
               <h4 class="card-title">Warning card title</h4>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
             </div>
           </div>
@@ -141,8 +154,8 @@
             <div class="card-body">
               <h4 class="card-title">Info card title</h4>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
             </div>
           </div>
@@ -156,8 +169,8 @@
               <div class="card-body">
                 <h4 class="card-title">Light card title</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </p>
               </div>
             </div>
@@ -168,8 +181,8 @@
               <div class="card-body">
                 <h4 class="card-title">Dark card title</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </p>
               </div>
             </div>
@@ -177,5 +190,189 @@
         </div>
       </center>
     </div>
+    <form class="mx-auto mt-5 mb-5" style="width:1100px">
+      <fieldset>
+        <legend>Legend</legend>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect1" class="form-label mt-4">Example select</label>
+          <select class="form-select" id="exampleSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect1" class="form-label mt-4">Example disabled select</label>
+          <select class="form-select" id="exampleDisabledSelect1" disabled="">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
+          <select multiple="" class="form-select" id="exampleSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="formFile" class="form-label mt-4">Default file input example</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+    </form>
+    <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
